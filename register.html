@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Register</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=UnifrakturCook&display=swap" rel="stylesheet">
+    <!-- <style>
+        @import url('https://fonts.googleapis.com/css2?family=Pacifico&family=UnifrakturCook&display=swap');
+    </style> -->
+</head>
+
+<body>
+    <div class="header">
+        <div class="left">
+            <img class="logo" src="logo.png" alt="logo" />
+        </div>
+        <div class="right">
+            <button class="login"><a href="login.html">Login</a></button>
+            <button class="register"><a href="register.html">Register</a></button>
+        </div>
+    </div>
+    <div class="navbar">
+        <ul>
+            <a href="index.html"><li>Home</li></a>
+            <a href="products.html"><li>Products</li></a>
+            <a href="aboutus.html"><li>About Us</li></a>
+            <a href="contact.html"><li>Contact Us</li></a>
+        </ul>
+    </div>
+    <h1 class="pagesheading">Register</h1>
+    <div class="registerform">
+        <form name="myForm" action="index.html" onsubmit="return validateregisterForm()" method="post" required>
+            <label for="firstname">Enter your First Name</label><br>
+        <input type="text" name="firstname" id="firstname" placeholder="Enter Your First Name"/><br>
+            <label for="lastname">Enter your Last Name</label><br>
+        <input type="text" name="lastname" id="lastname" placeholder="Enter Your Last Name"/>
+        <br>
+        <label for="registeremailaddress">Enter your Email Address</label><br>
+            <input type="email" name="emailaddress" id="registeremailaddress" placeholder="Enter Your Email Address"/>
+        <br>
+            <label for="registerpassword">Enter your Password</label><br>
+        <input type="password" name="password" id="registerpassword" placeholder="Enter Your Password"/>
+        <br>
+            <label for="dob">Enter your Date of birth</label><br>
+        <input type="date" name="dob" id="dob"/><br>
+        <input type="submit" name="send" id="registersend" value="SignUp"/>
+        </form>
+    </div>
+    <div class="footer">
+        <div class="service">
+            <div class="foot_img">
+                <a href="index.html"><img class="logo" src="logo.png" alt="logo" /></a>
+            </div>
+            <p class="foot_p">We are available 24/7, and the sign-up process is extremely simple! For all new User. "Sign Up NOW"</p>
+        </div>
+        <div class="pages">
+            <h1 class="cakes">Visit Our Pages</h1>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="about.html">About Us</a></li>
+            </ul>
+        </div>
+        <div class="foot_cakes">
+            <h2 class="cakes">Cakes</h2>
+            <ul>
+                <li><a href="birthday.html">Custom cakes</a></li>
+                <li><a href="chocolate.html">Normal Cakes</a></li>
+                <li><a href="eid.html">Occasional cakes</a></li>
+                <li><a href="pastries.html">other items</a></li>
+            </ul>
+        </div>
+        <div class="social">
+            <h2 class="cakes">social media links</h2>
+            <a href="https://www.facebook.com/dha.suffa/"> <img src="facebook.png" alt="fb" />facebook</a>
+            <br>
+            <a href="https://twitter.com/lifeatdsu"> <img src="twitter.png" alt="tw" />twitter</a>
+            <br>
+            <a href="https://www.instagram.com/dsu_official/?hl=en"> <img src="instagram.png" alt="ins" />instagram</a>
+            <br>
+            <a href="https://www.linkedin.com/school/dha-suffa-university/?originalSubdomain=pk"> <img src="linkedin.png" alt="link" />linkedin</a>
+        </div>
+    </div>
+    <div class="copyright">
+        &copy; 2023 DsuCakeShop Inc. All Rights Reserved.
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

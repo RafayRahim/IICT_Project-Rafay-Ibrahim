@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Order</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=UnifrakturCook&display=swap" rel="stylesheet">
+    <!-- <style>
+        @import url('https://fonts.googleapis.com/css2?family=Pacifico&family=UnifrakturCook&display=swap');
+    </style> -->
+</head>
+
+<body>
+    <div class="header">
+        <div class="left">
+            <img class="logo" src="logo.png" alt="logo" />
+        </div>
+        <div class="right">
+            <button class="login"><a href="login.html">Login</a></button>
+            <button class="register"><a href="register.html">Register</a></button>
+        </div>
+    </div>
+    <div class="navbar">
+        <ul>
+            <a href="index.html"><li>Home</li></a>
+            <a href="products.html"><li>Products</li></a>
+            <a href="aboutus.html"><li>About Us</li></a>
+            <a href="contact.html"><li>Contact Us</li></a>
+        </ul>
+    </div>
+    <h1 class="pagesheading">Order</h1>
+    <div class="orderform">
+        <form name="myForm" action="index.html" onsubmit="return validateorder()" method="post" required>
+            <label for="productname">Enter your Product Name</label><br>
+        <input type="text" name="productname" id="firstname" placeholder="Enter Your Product Name"/><br>
+            <label for="itemcode">Enter your Item Code</label><br>
+        <input type="number" name="itemcode" id="firstname" placeholder="Enter Your Item Code"/>
+        <br>
+        <h3>Which Mode Of Payment You Want To Choose</h3>
+        <input type="radio" id="card" name="Payment" value="card">
+        <label for="card">Easypaisa/Jazzcash</label><br>
+        <input type="radio" id="cash" name="Payment" value="Cash">
+        <label for="cash">Bank Transfer</label><br>
+        <input type="radio" id="onlinetransaction" name="Payment" value="onlinetransaction">
+        <label for="onlinetransaction">Credit Card</label><br>
+        <br>
+            <label for="number">Enter your Account Number</label><br>
+        <input type="number" name="number" id="firstname" placeholder="Account Number"/><br>
+        <input type="submit" name="send" id="send" value="Submit"/>
+        </form>
+    </div>
+    <div class="footer">
+        <div class="service">
+            <div class="foot_img">
+                <a href="index.html"><img class="logo" src="logo.png" alt="logo" /></a>
+            </div>
+            <p class="foot_p">We are available 24/7, and the sign-up process is extremely simple! For all new User. "Sign Up NOW"</p>
+        </div>
+        <div class="pages">
+            <h1 class="cakes">Visit Our Pages</h1>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="about.html">About Us</a></li>
+            </ul>
+        </div>
+        <div class="foot_cakes">
+            <h2 class="cakes">Cakes</h2>
+            <ul>
+                <li><a href="birthday.html">Custom cakes</a></li>
+                <li><a href="chocolate.html">Normal Cakes</a></li>
+                <li><a href="eid.html">Occasional cakes</a></li>
+                <li><a href="pastries.html">other items</a></li>
+            </ul>
+        </div>
+        <div class="social">
+            <h2 class="cakes">social media links</h2>
+            <a href="https://www.facebook.com/dha.suffa/"> <img src="facebook.png" alt="fb" />facebook</a>
+            <br>
+            <a href="https://twitter.com/lifeatdsu"> <img src="twitter.png" alt="tw" />twitter</a>
+            <br>
+            <a href="https://www.instagram.com/dsu_official/?hl=en"> <img src="instagram.png" alt="ins" />instagram</a>
+            <br>
+            <a href="https://www.linkedin.com/school/dha-suffa-university/?originalSubdomain=pk"> <img src="linkedin.png" alt="link" />linkedin</a>
+        </div>
+    </div>
+    <div class="copyright">
+        &copy; 2023 DsuCakeShop Inc. All Rights Reserved.
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
